@@ -4,7 +4,7 @@ import JsxTheorie from "./components/JsxTheorie";
 import HookUseState from "./components/HookUseState";
 import Form from "./components/Form";
 import DisplayList from "./components/DisplayList";
-import ExerciceFruits from "./components/ExerciceFruits";
+import ExerciceFruits from "./components/ExerciceFruits/ExerciceFruits";
 
 function App() {
   return (

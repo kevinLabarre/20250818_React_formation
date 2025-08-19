@@ -1,13 +1,4 @@
-function ExerciceFruits() {
-  const products = [
-    { category: "Fruits", price: "$1", number: 0, name: "Banana" },
-    { category: "Fruits", price: "$1", number: 2, name: "Mango" },
-    { category: "Fruits", price: "$2", number: 0, name: "Pineapple" },
-    { category: "Vegetables", price: "$2", number: 4, name: "Broccoli" },
-    { category: "Vegetables", price: "$4", number: 0, name: "Carrot" },
-    { category: "Vegetables", price: "$1", number: 6, name: "Zucchini" },
-  ];
-
+function Consigne() {
   return (
     <>
       <h1>Exercice fruits</h1>
@@ -26,4 +17,4 @@ function ExerciceFruits() {
   );
 }
 
-export default ExerciceFruits;
+export default Consigne;

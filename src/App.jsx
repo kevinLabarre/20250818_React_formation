@@ -1,20 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import JsxTheorie from "./components/JsxTheorie";
 
 function App() {
-  const title = "<strong>Bienvenue sur notre application React !</strong>";
-  const number = 1;
-
-  const imgSrc = "/vite.svg";
-
   return (
     <>
-      <h1>{title}</h1>
-      <p>Nombre : {number}</p>
-      <p>Nombre : {number + 1}</p>
-
-      <img src={imgSrc} alt="Vite logo" />
-
-      <p dangerouslySetInnerHTML={{ __html: title }}></p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<JsxTheorie />} />
+          <Route path="/test" element={<p>Page test !</p>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

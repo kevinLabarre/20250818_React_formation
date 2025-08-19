@@ -1,20 +1,34 @@
-function TableProduct({ products, afficherHorsStock, search }) {
+function TableProduct({ products, afficherHorsStock = true, search = "" }) {
   return (
     <>
-      {products
-        .filter(
-          (product) =>
-            (afficherHorsStock ? true : product.number > 0) &&
-            product.name.toLowerCase().includes(search.toLowerCase())
-        )
-        .map((p) => (
-          <ul>
-            <li>{p.name}</li>
-            <li>{p.number}</li>
-            <li>{p.price}</li>
-            <li>{p.category}</li>
-          </ul>
-        ))}
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Categorie</th>
+            <th>Quantité</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products
+            .filter(
+              (product) =>
+                (afficherHorsStock ? true : product.number > 0) &&
+                product.name.toLowerCase().includes(search.toLowerCase())
+            )
+            .map((p, idx) => (
+              <tr key={p.id ? p.id : idx}>
+                <td>{p.id}</td>
+                <td>{p.name}</td>
+                <td>{p.price}</td>
+                <td>{p.category}</td>
+                <td>{p.number}</td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
     </>
   );
 }

@@ -12,6 +12,7 @@ export const Navbar = () => {
         <Link to="/flux-de-donnees">flux </Link>
         <Link to="/use-effect">use-effect </Link>
         <Link to="/requete-api">Requetes </Link>
+        <Link to="/hook-perso">Hook-perso </Link>
       </nav>
     </section>
   );

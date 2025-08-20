@@ -9,6 +9,7 @@ import { Navbar } from "./components/Navbar";
 import { Flux } from "./components/Flux";
 import { HookUseEffect } from "./components/HookUseEffect";
 import { RequeteApi } from "./components/RequeteApi";
+import { CustomHook } from "./components/CustomHook";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/flux-de-donnees" element={<Flux />} />
           <Route path="/use-effect" element={<HookUseEffect />} />
           <Route path="/requete-api" element={<RequeteApi />} />
+          <Route path="/hook-perso" element={<CustomHook />} />
         </Routes>
       </BrowserRouter>
     </>

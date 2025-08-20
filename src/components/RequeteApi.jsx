@@ -10,6 +10,7 @@ export const RequeteApi = () => {
 
   useEffect(() => {
     loadProducts();
+    // loadProductsAsync();
   }, []);
 
   const loadProducts = () => {
@@ -21,6 +22,15 @@ export const RequeteApi = () => {
       })
       .catch((e) => console.log(e))
       .finally(() => console.log("requete terminé"));
+  };
+
+  const loadProductsAsync = async () => {
+    try {
+      const response = await axios.get(endpoint);
+      setProducts(response.data);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (

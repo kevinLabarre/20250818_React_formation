@@ -62,6 +62,13 @@
       "price": "4",
       "number": "quantité3",
       "category": "Catégorie4"
+    },
+    {
+      "id": "8f9e",
+      "name": "Test_Hook",
+      "price": "2",
+      "number": "2",
+      "category": ""
     }
   ]
 }
